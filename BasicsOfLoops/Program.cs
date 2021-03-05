@@ -8,6 +8,17 @@ namespace BasicsOfLoops
         {
             // Introduction to loops in C#
             // For loops
+            for (int i = 10; i >= 0; i--)
+            {
+                if (i > 0)
+                {
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    Console.WriteLine("Blast off!");
+                }
+            }
         }
     }
 }

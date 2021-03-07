@@ -62,8 +62,8 @@ namespace BasicsOfLoops
                     missingStudents++;
                     counter++;
                 }
-                
             }
+            Console.WriteLine("You have counted all {0} students on the bus, {1} are still unaccounted for.", studentsAccountedFor, missingStudents);
         }
     }
 }

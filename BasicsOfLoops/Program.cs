@@ -42,11 +42,23 @@ namespace BasicsOfLoops
             // While loops
             Console.WriteLine("While loop example:");
             int counter = 0;
-            int numberOfStudents = 23;
-            Console.WriteLine("You should have {0} students on the bus.");
-            while (counter < 100)
+            int studentsAccountedFor = 0;
+            int numberOfStudents = 21;
+            Console.WriteLine("Rollcall! There are {0} seats and you should have {1} students on the bus.", numberOfSeats, numberOfStudents);
+            while (counter < numberOfStudents)
             {
-
+                Console.WriteLine("Press enter if the seat is filled, any other input means the seat is empty:");
+                string input = Console.ReadLine();
+                if (String.IsNullOrEmpty(input))
+                {
+                    Console.WriteLine("Good, this seat has a student sitting in it!");
+                    studentsAccountedFor++;
+                    counter++;
+                }
+                else
+                {
+                    Console.WriteLine("This seat is empty");
+                }
                 Console.WriteLine(counter);
                 counter += 10;
             }

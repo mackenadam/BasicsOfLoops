@@ -38,6 +38,14 @@ namespace BasicsOfLoops
             Console.WriteLine("Thanks, that was enough names: {0}", wholeText);
 
             Console.WriteLine("...");
+
+            // While loops
+            int counter = 0;
+            while (counter < 100)
+            {
+                Console.WriteLine(counter);
+                counter += 10;
+            }
         }
     }
 }

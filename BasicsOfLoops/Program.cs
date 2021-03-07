@@ -40,9 +40,13 @@ namespace BasicsOfLoops
             Console.WriteLine("...");
 
             // While loops
+            Console.WriteLine("While loop example:");
             int counter = 0;
+            int numberOfStudents = 23;
+            Console.WriteLine("You should have {0} students on the bus.");
             while (counter < 100)
             {
+
                 Console.WriteLine(counter);
                 counter += 10;
             }

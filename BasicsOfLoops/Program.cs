@@ -52,15 +52,15 @@ namespace BasicsOfLoops
                 string input = Console.ReadLine();
                 if (String.IsNullOrEmpty(input))
                 {
-                    Console.WriteLine("Good, this seat has a student sitting in it!");
                     studentsAccountedFor++;
                     counter++;
+                    Console.WriteLine("Good, this seat has a student sitting in it! {0} people are on the bus.", studentsAccountedFor);
                 }
                 else
                 {
-                    Console.WriteLine("This seat is empty.");
                     missingStudents++;
                     counter++;
+                    Console.WriteLine("This seat is empty. You are missing {0} students.", missingStudents);
                 }
             }
             Console.WriteLine("You have counted all {0} students on the bus, {1} are still unaccounted for.", studentsAccountedFor, missingStudents);

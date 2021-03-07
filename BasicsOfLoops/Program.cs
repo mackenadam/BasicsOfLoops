@@ -43,8 +43,9 @@ namespace BasicsOfLoops
             Console.WriteLine("While loop example:");
             int counter = 0;
             int studentsAccountedFor = 0;
+            int missingStudents = 0;
             int numberOfStudents = 21;
-            Console.WriteLine("Rollcall! There are {0} seats and you should have {1} students on the bus.", numberOfSeats, numberOfStudents);
+            Console.WriteLine("Rollcall! You should have {0} students on the bus.", numberOfStudents);
             while (counter < numberOfStudents)
             {
                 Console.WriteLine("Press enter if the seat is filled, any other input means the seat is empty:");
@@ -57,10 +58,11 @@ namespace BasicsOfLoops
                 }
                 else
                 {
-                    Console.WriteLine("This seat is empty");
+                    Console.WriteLine("This seat is empty.");
+                    missingStudents++;
+                    counter++;
                 }
-                Console.WriteLine(counter);
-                counter += 10;
+                
             }
         }
     }

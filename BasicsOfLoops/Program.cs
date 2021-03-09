@@ -40,6 +40,7 @@ namespace BasicsOfLoops
             Console.WriteLine("...");
 
             // While loops
+            // Break and continue
             Console.WriteLine("While loop example:");
             int counter = 0;
             int studentsAccountedFor = 0;
@@ -62,6 +63,7 @@ namespace BasicsOfLoops
                     counter++;
                     Console.WriteLine("This seat is empty. You are missing {0} students.", missingStudents);
                 }
+                
             }
             Console.WriteLine("You have counted all {0} students on the bus, {1} are still unaccounted for.", studentsAccountedFor, missingStudents);
         }

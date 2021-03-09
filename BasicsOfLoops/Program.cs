@@ -61,9 +61,18 @@ namespace BasicsOfLoops
                 {
                     missingStudents++;
                     counter++;
+                    Console.WriteLine("You have lost at least one student. Would you like to stop now and go find them?");
+                    Console.WriteLine("Type y or Y to stop now, or any other input to continue:");
+                    string option = Console.ReadLine();
+                    if (option.Equals("y") || option.Equals("Y"))
+                    {
+                        Console.WriteLine("Good luck...");
+                        break;
+                    }
+
+
                     Console.WriteLine("This seat is empty. You are missing {0} students.", missingStudents);
                 }
-                
             }
             Console.WriteLine("You have counted all {0} students on the bus, {1} are still unaccounted for.", studentsAccountedFor, missingStudents);
         }
